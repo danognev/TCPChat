@@ -1,7 +1,12 @@
-﻿add_executable (Server "main.cpp")
-#add_subdirectory ("UnitTests")
+﻿project("Server")
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET Server PROPERTY CXX_STANDARD 20)
-endif()
-project(Server)
+add_subdirectory(src)
+add_subdirectory(UnitTests)
+
+include(FetchContent)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(googletest)
