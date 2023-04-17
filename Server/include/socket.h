@@ -35,7 +35,7 @@ private:
 public:
     Socket(tcp::socket&&);
     void Start(message_handler&&, error_handler&&);
-    void Send(std::string const&);
+    void Send(const std::string &);
     ChatMember* GetChatMember();
 };
 
