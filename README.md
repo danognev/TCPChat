@@ -2,13 +2,13 @@
 <p>Курсовое задание в рамках обучения в iT-школе НТЦ Протей</p>
 <h1 id="-">Содержание</h1>
 <ol>
-<li><a href="#introduction">Введение</a>  <ol>
+<li><a href="#introduction">Введение</a><ol>
 <li><a href="#intro1">Описание</a></li>
 </ol>
 </li>
-<li><p><a href="#paragraph1">Структура проекта</a>  </p>
+<li><p><a href="#paragraph1">Структура проекта</a></p>
 <ol>
-<li><a href="#subparagraph1">Сервер</a>  <ol>
+<li><a href="#subparagraph1">Сервер</a><ol>
 <li><a href="#sspar1">Socket</a></li>
 <li><a href="#sspar2">Server</a></li>
 <li><a href="#sspar3">Logger</a></li>
