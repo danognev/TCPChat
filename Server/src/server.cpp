@@ -32,7 +32,7 @@ void Server::AsyncAccept() {
     });
 }
 
-void Server::Send(std::string const& message) {
+void Server::Send(const std::string &message) {
     for(auto& client : clients)
         if(client->GetChatMember()->IsAuthorized())
             client->Send(message);
